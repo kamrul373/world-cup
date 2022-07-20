@@ -14,7 +14,7 @@ body {
 }
 
 .container {
-    width: 1100px;
+    max-width: 1100px;
     margin: 0 auto;
 }
 
@@ -29,6 +29,7 @@ p {
 h1 {
     font-size: 70px;
 }
+
 
 img {
     width: 100%
@@ -49,7 +50,6 @@ Banner style start
     border: 1px solid #161616;
     border-radius: 24px;
     padding: 35px 70px 0 70px;
-
 }
 
 .banner-details h1 {
@@ -207,11 +207,15 @@ Footer style start
 
 .footer-area {
     background-color: #161616;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    row-gap: 30px;
     padding: 50px 100px;
+
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    row-gap: 30px;
 }
 
 .logo {
@@ -227,8 +231,11 @@ Footer style start
 }
 
 .menu-items {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-items: center;
     column-gap: 30px;
+
 }
 
 .footer-area a {
@@ -245,6 +252,7 @@ Footer style start
     font-size: 18px;
     margin: 0 10px;
 }
+
 
 /* -----------------------
 Footer style end 

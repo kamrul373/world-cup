@@ -65,4 +65,14 @@
 
     /* blog area end */
 
+    /*  footer area start*/
+    .menu-items {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /*  footer area end*/
+
 }
+
+/* Mobile devices */
+@media screen and (max-width:576px) {}
